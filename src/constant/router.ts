@@ -9,4 +9,9 @@ export const ROUTER_APP = {
         type: "public",
         name: "Affine",
     },
+    CAESAR_CIPHER: {
+        href: "/caesar-cipher",
+        type: "public",
+        name: "Caesar Cipher",
+    }
 }
