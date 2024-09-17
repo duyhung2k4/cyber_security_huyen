@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NumberInput, Text, Textarea } from "@mantine/core";
+import { Container, NumberInput, Text, Textarea } from "@mantine/core";
 import { useForm } from "@mantine/form";
 
 const caesarCipher = (str: string, shift: number) => {
@@ -51,7 +51,7 @@ const CaesarCipher: React.FC = () => {
 
 
     return (
-        <>
+        <Container>
             <Text>Mã Caesar Cipher</Text>
             <NumberInput
                 label="Số lượng dịch vòng"
@@ -69,7 +69,7 @@ const CaesarCipher: React.FC = () => {
                 readOnly
                 {...form.getInputProps("output")}
             />
-        </>
+        </Container>
     )
 }
 
